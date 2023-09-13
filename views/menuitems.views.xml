@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem id="custom_order_root" name="Customer Order" sequence="0"/>
+    </data>
+</odoo>
