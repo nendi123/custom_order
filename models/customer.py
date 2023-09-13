@@ -4,7 +4,7 @@ from odoo import models, fields # Mandatory
 
 
 class Customer(models.Model):
-    _name = 'custome_order.customer' # name_of_module.name_of_class 
+    _name = 'custom_order.customer' # name_of_module.name_of_class 
     _description = 'Customer Order' # Some note of table
 
     # Header

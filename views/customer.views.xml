@@ -11,6 +11,6 @@
             </field>
         </record>
 
-        <menuitem id="custom_order" name="custom_order" parent="custom_order_root" action="custom_order_customer_action"/>
+        <menuitem id="customer" name="Customer" parent="custom_order_root" action="custom_order_customer_action"/>
     </data>
 </odoo>
