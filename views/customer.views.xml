@@ -1,5 +1,6 @@
 <odoo>
     <data>
+    
         <record id="custom_order_customer_action" model="ir.actions.act_window">
             <field name="name">Custome Order</field>
             <field name="res_model">custom_order.customer</field>
@@ -8,6 +9,51 @@
                 <p class="0_view_nocontent_smiling_face">
                     Belum ada Customer!
                 </p>
+            </field>
+        </record>
+        
+        <record id="custom_order_customer_tree" model="ir.ui.view">
+            <field name="name">Custonmer</field>
+            <field name="model">custom_order.customer</field>
+            <field name="arch" type="xml">
+                <tree limit='2' default_order='email'>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="whatsapp" optional='hide'/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="custom_order_customer_form" model="ir.ui.view">
+            <field name="name">Customer</field>
+            <field name="model">custom_order.customer</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group string="Informasi Costomenr">
+                            <field name="photo_profile" style="width:100px;height:100px" widget='image'/>
+                            <field name="name" class="oe_edit_only"/>
+                            <field name="gender"/>
+                            <field name="address" invisible="1"/>
+                        </group>
+                        <group string="Informasi Kontak">
+                            <field name="email" readonly='1'/>
+                            <field name="whatsapp"/>
+                        </group>
+                        <notebook>
+                            <page string="Data Diri">
+                                <group>
+                                    <field name="name"/>
+                                </group>
+                            </page>
+                            <page string="Data email">
+                                <group>
+                                    <field name="email"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
             </field>
         </record>
 

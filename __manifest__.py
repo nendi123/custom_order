@@ -22,7 +22,9 @@
     'data': [
         'security/ir.model.access.csv',
         'views/menuitems.views.xml',
-        'views/customer.views.xml'
+        'views/customer.views.xml',
+        'views/produk.views.xml',
+        'views/category.views.xml'
     ],
 
     'installable': True,

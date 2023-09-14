@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_custom_order_customer,access_custom_order_customer,model_custom_order_customer,base.group_user,1,1,1,1
+access_custom_order_produk,access_custom_order_produk,model_custom_order_produk,base.group_user,1,1,1,1
+access_custom_order_category,access_custom_order_category,model_custom_order_category,base.group_user,1,1,1,1

@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record id="custom_order_category_action" model="ir.actions.act_window">
+            <field name="name">Category</field>
+            <field name="res_model">custom_order.category</field>
+            <field name="view_mode">kanban,tree,form,graph</field>
+            <field name="help" type="html">
+                <p class="0_view_nocontent_smiling_face">
+                    Belum ada category!
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="category" name="Category" parent="custom_order_root" action="custom_order_category_action"/>
+    </data>
+</odoo>
